@@ -1,7 +1,7 @@
 var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-const PUBLIC_PATH = 'https://souflam.github.io/angularpwa/dist/';
+
 module.exports = {
-  navigateFallback: PUBLIC_PATH+'index.html',
+  navigateFallback: '/index.html',
   navigateFallbackWhitelist: [/^(?!\/__)/],
   stripPrefix: 'dist',
   root: 'dist/',
