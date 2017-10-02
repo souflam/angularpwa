@@ -11,7 +11,7 @@ module.exports = {
         cacheId: 'appsouflam',
         filename: 'service-worker.js',
         staticFileGlobs: [
-          'dist/index.js',
+          'dist/index.html',
           'dist/**.js',
           'dist/**.css',
         ],
