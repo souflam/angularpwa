@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "preinstall": "npm install -g angular-cli",
     "postinstall": "ng build --aot --target=production",
-    "pwa": "ng build --prod && sw-precache --root=dist --config=precache-config.js --base-href https://souflam.github.io/angularpwa/dist/"
+    "pwa": "ng build --prod --base-href https://souflam.github.io/angularpwa/dist/ && sw-precache --root=dist --config=precache-config.js"
   },
   "private": true,
   "dependencies": {
