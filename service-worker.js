@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/3rdpartylicenses.txt","f3f8e452b652521576b872dc8d65df63"],["/assets/icon/android-chrome-192x192.png","dfd04c5c40c4466fc2881298e7f87224"],["/assets/icon/android-chrome-512x512.png","47414f1a14e93218edef59abdec2454f"],["/assets/icon/apple-touch-icon.png","5388b7c21a7d78beb5d40c0f1f6f0119"],["/assets/icon/browserconfig.xml","a493ba0aa0b8ec8068d786d7248bb92c"],["/assets/icon/favicon-16x16.png","f99751d5be47708673140f55dcc28841"],["/assets/icon/favicon-32x32.png","ebe7e610d044bb48da84b61ac01b0daa"],["/assets/icon/favicon.ico","5aa0e23e46462ce01e29307b09ab2468"],["/assets/icon/manifest.json","c8e3b78f511f57bf0242db20616f37f5"],["/assets/icon/mstile-150x150.png","b243eb524fd7c7c69ac0be3a5575b465"],["/favicon.ico","b9aa7c338693424aae99599bec875b5f"],["/index.html","058b6610036d5ea09a8a0ccad316b953"],["/inline.25b3f727ba679ef969a0.bundle.js","bc49094f29d41adb459f879e32cba4c4"],["/main.104165b00ae8e2041cc5.bundle.js","3522512d41d6a930bf0cfcc0706b087d"],["/manifest.json","75fdbae1cee312cd39e2ae5ce1f4a6fa"],["/polyfills.900aaf0d520c2ec873a7.bundle.js","a1a42d9eb5149e7037b56e5b0ac3d08e"],["/styles.254b970c25ec341220b7.bundle.css","254b970c25ec341220b768b7ba3842e3"],["/vendor.0c51199595b63adb6052.bundle.js","e4391d591a7d903962a9dea24b597b87"]];
+var precacheConfig = [["/3rdpartylicenses.txt","f3f8e452b652521576b872dc8d65df63"],["/assets/icon/android-chrome-192x192.png","dfd04c5c40c4466fc2881298e7f87224"],["/assets/icon/android-chrome-512x512.png","47414f1a14e93218edef59abdec2454f"],["/assets/icon/apple-touch-icon.png","5388b7c21a7d78beb5d40c0f1f6f0119"],["/assets/icon/browserconfig.xml","a493ba0aa0b8ec8068d786d7248bb92c"],["/assets/icon/favicon-16x16.png","f99751d5be47708673140f55dcc28841"],["/assets/icon/favicon-32x32.png","ebe7e610d044bb48da84b61ac01b0daa"],["/assets/icon/favicon.ico","5aa0e23e46462ce01e29307b09ab2468"],["/assets/icon/manifest.json","c8e3b78f511f57bf0242db20616f37f5"],["/assets/icon/mstile-150x150.png","b243eb524fd7c7c69ac0be3a5575b465"],["/favicon.ico","b9aa7c338693424aae99599bec875b5f"],["/index.html","868cd41deff83fd6ce0281ae8ebb0f65"],["/inline.25b3f727ba679ef969a0.bundle.js","bc49094f29d41adb459f879e32cba4c4"],["/main.104165b00ae8e2041cc5.bundle.js","3522512d41d6a930bf0cfcc0706b087d"],["/manifest.json","75fdbae1cee312cd39e2ae5ce1f4a6fa"],["/polyfills.900aaf0d520c2ec873a7.bundle.js","a1a42d9eb5149e7037b56e5b0ac3d08e"],["/styles.254b970c25ec341220b7.bundle.css","254b970c25ec341220b768b7ba3842e3"],["/vendor.0c51199595b63adb6052.bundle.js","e4391d591a7d903962a9dea24b597b87"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
     // If shouldRespond is still false, check to see if this is a navigation
     // request, and if so, whether the URL matches navigateFallbackWhitelist.
-    var navigateFallback = '/index.html';
+    var navigateFallback = 'https://souflam.github.io/angularpwa/dist/index.html';
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
