@@ -11,9 +11,18 @@ export class AppComponent {
 
   constructor(private http: Http) {
 
-    this.http.get('https://jsonplaceholder.typicode.com/photos')
-      .map(response => response.json())
-      .subscribe(res => this.myData = res);
+    this.http.get('https://jsonplaceholder.typicode.com/photos?_start=1&_limit=10')
+      .map(response => {
+        return response.json()
+      })
+      .subscribe(res => {
+        let newRes = res.map(res => {
+          res.url = res.url.replace('http', 'https');
+          return res;
+        });
+        console.log(newRes);
+        this.myData = newRes;
+      });
 
 
   }
